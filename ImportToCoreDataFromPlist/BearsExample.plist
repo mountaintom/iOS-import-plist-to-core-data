@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <dict>
+		<key>description</key>
+		<string>Picnic basket stealer extraordinaire</string>
+		<key>name</key>
+		<string>Yogi</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Has on and off interest in Yogi</string>
+		<key>name</key>
+		<string>Cindy</string>
+	</dict>
+	<dict>
+		<key>description</key>
+		<string>Yogi’s faithful companion and conscience</string>
+		<key>name</key>
+		<string>Boo-Boo</string>
+	</dict>
+</array>
+</plist>
