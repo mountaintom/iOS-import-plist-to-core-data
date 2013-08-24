@@ -11,7 +11,7 @@ A simple way to try this class, is create a Master Detail project in Xcode, with
 
 * Add the files ImportToCoreDataFromPlist.h and ImportToCoreDataFromPlist.m to your project. 
 
-* Add the BearsExample.plist file (in the BearsExamplePlister folder) to your project.
+* Add the BearsExample.plist file (in the BearsExamplePlist folder) to your project.
 
 * Create a Core Data entity named Bears.
 * Add the following attributes to the Bears entity: (or just use the Event entity if you use the Master Detail template)
@@ -106,7 +106,7 @@ Arguments Description:
 
 **error**: address (&error) of a NSError object pointer. See code example on how to use.
 
-**withMapping**: This the mapping of the attribute names in the Core Data entity to the attribute names in the plist. In many case the names used in the plist wile be the same as the names used in the Core Data entity. This gives the chance to bridge the gap should they not be the same. This map is always required. And is a NSDictionary object. See code usage example.
+**withMapping**: This handles the mapping of the attribute names in the Core Data entity to the attribute names in the plist. In many case the names used in the plist wile be the same as the names used in the Core Data entity. This gives the chance to bridge the gap should they not be the same. This map is always required. And is a NSDictionary object. See code usage example.
 
 **withMapping specials**: If #timestamp or #counter are supplied as the right hand (value) part of the map, the following special actions will take place:
 
