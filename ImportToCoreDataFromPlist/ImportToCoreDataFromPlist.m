@@ -13,7 +13,7 @@ NSString *Error_Domain = @"com.mountaintom.coredata.import";
 
 @implementation ImportToCoreDataFromPlist
 
-- (int) importFromPlistNamed:(NSString *)plistName
+- (BOOL) importFromPlistNamed:(NSString *)plistName
       inManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
               andEntityNamed:(NSString *)entityName
                  withMapping:(NSDictionary *)mapping
@@ -118,7 +118,7 @@ NSString *Error_Domain = @"com.mountaintom.coredata.import";
             
             NSString *thePlistKey = [mapping objectForKey:theCDKey];
             
-            // A couple of conveninces for timsΩtamps or adding record counts
+            // A couple of conveninces for time stamps or adding record counts
             if ([thePlistKey isEqualToString:@"#timestamp"]) {
                 [newManagedObject setValue:[NSDate date] forKey:theCDKey];
             }else if ([thePlistKey isEqualToString:@"#counter"]){
@@ -170,3 +170,4 @@ NSString *Error_Domain = @"com.mountaintom.coredata.import";
 }
 
 @end
+

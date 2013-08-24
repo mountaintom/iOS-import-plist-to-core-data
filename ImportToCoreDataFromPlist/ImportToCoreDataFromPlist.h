@@ -14,7 +14,7 @@
 
 @interface ImportToCoreDataFromPlist : NSObject
 
-- (int) importFromPlistNamed:(NSString *)plistName
+- (BOOL) importFromPlistNamed:(NSString *)plistName
       inManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
               andEntityNamed:(NSString *)entityName
                  withMapping:(NSDictionary *)mapping
@@ -23,3 +23,4 @@
 
 
 @end
+
